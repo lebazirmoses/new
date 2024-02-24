@@ -1,0 +1,67 @@
+.insite-highlight {
+    position: relative;
+    background: none; /* Remove the background color */
+    border: 2px solid #FF0000; /* Set the border color to red */
+    animation: bounce 1s infinite; /* Add a bouncing animation */
+}
+
+.insite-highlight .insite-highlight-body {
+    font-size: 12px;
+    font-weight: 150;
+    margin: 0;
+    width: 200px;
+    color: #000000;
+    background-color: #FF0000; /* Set the background color to red */
+
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.insite-highlight-body .modal-header {
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 3px 2px -1px #00131f;
+    background-color: #FF0000; /* Set the header background color to red */
+    padding: 3px;
+}
+
+.insite-highlight-body .modal-header h1 {
+    color: #000000;
+
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.insite-highlight-body .modal-content {
+    padding: 8px 16px 8px 16px;
+    font-size: 12px;
+    font-weight: 150;
+    color: #ffffff;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.insite-highlight:hover .insite-highlight-body {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Define the bouncing animation */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}

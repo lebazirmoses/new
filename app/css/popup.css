@@ -1,0 +1,103 @@
+html, body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    min-height: 180px;
+    width: 296px;
+    color: #F0F0F0;
+    background-color: #1F2B38;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+p {
+    font-size: 14px;
+    margin: 8px 0;
+    color: #D8D8D8;
+}
+
+button {
+    background-color: #4BE680;
+    border: none;
+    font-size: 16px;
+    padding: 12px;
+    margin: 16px 0;
+    border-radius: 3px;
+    box-shadow: 0px 3px 2px 1px #00131f;
+    width: 100%;
+    color: #FFFFFF;
+    transition: background-color 0.2s ease;
+}
+
+button:active {
+    background-color: #41C46E;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.modal-header {
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 3px 2px 1px #00131f;
+    background-color: #05283D;
+    padding: 12px;
+}
+
+.modal-content {
+    padding: 16px;
+}
+
+.modal-footer {
+    text-align: center;
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+.container {
+    background-color: #042538;
+    margin: 16px 0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 3px 2px 1px #00131f;
+}
+
+.container p {
+    margin: 0;
+}
+
+.label {
+    color: #B8B8B8;
+    margin: 8px 0;
+    font-weight: 300;
+}
+
+.number, .total-number {
+    color: #FFFFFF;
+    font-size: 32px;
+}
+
+.modal-footer a {
+    color: #D8D8D8;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+.dark-patterns-message.blink {
+    animation: blink 1s infinite;
+    color: #FF5555;
+}

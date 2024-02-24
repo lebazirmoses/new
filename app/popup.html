@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&display=swap">
+    <link rel="stylesheet" href="css/popup.css" type="text/css">
+    <style>
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .dark-patterns-message.blink {
+            animation: blink 1s infinite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="modal-header">
+        <h1>THE DARK</h1>
+    </div>
+    <div class="modal-content">
+        <div class="container">
+            <p class="label">dark patterns</p>
+            <p class="number">n/a</p>
+        </div>
+        <button class="analyze-button" type="button">ANALYZE SITE</button>
+    </div>
+    <div class="modal-footer">
+        <p class="dark-patterns-message" style="color: red; display: none;">DARK PATTERNS FOUND!</p>
+        <a class="link" href=" " target="_blank" rel="noopener noreferrer"></a>
+    </div>
+
+    <script src="js/popup.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelector('.analyze-button').addEventListener('click', function () {
+                // Simulate a delay of 3 seconds (3000 milliseconds)
+                setTimeout(function () {
+                    // Display the message after the delay
+                    var darkPatternsMessage = document.querySelector('.dark-patterns-message');
+                    darkPatternsMessage.style.display = 'block';
+                    darkPatternsMessage.classList.add('blink');
+                }, 3000);
+            });
+        });
+    </script>
+</body>
+
+</html>
